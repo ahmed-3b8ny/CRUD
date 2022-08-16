@@ -1,0 +1,11 @@
+.card {
+    box-shadow: 10px 10px 102px 24px rgba(0, 0, 0, 0.45);
+}
+
+span {
+    background-color: rgb(255, 251, 0);
+}
+
+#alert {
+    display: none;
+}

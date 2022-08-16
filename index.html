@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <div class="w-50 m-auto card p-5">
+            <label for="ProductName">ProductName:</label>
+            <input onkeyup="validateName(this.value)"  id="ProductName" type="text" class="form-control mb-lg-3">
+            <div id="alert" class="alert alert-danger text-center my-3">
+                name must start with upper case
+            </div>
+            <label for="ProductCategory">ProductCategory:</label>
+            <input id="ProductCategory" type="text" class="form-control mb-lg-3">
+            <label for="ProductPrice">ProductPrice:</label>
+            <input id="ProductPrice" type="number" class="form-control mb-lg-3">
+            <label for="ProductDescription">ProductDescription:</label>
+            <textarea class="form-control mb-lg-3" id="ProductDescription" cols="10" rows="2"></textarea>
+            
+            <button id="btn" onclick="getData()"  class="btn btn-info">Add Product</button>
+            <!-- <button id="btn" onclick="clear()"  class="btn btn-warning my-3">clear</button> -->
+
+        </div>
+    </div>
+    <div class="container">
+        <input id="searchInput" onkeyup="search(this.value)"  class="form-control w-25 mx-auto my-5" type="text" placeholder="Search...">
+        <table class="table table-hover text-center">
+            <thead>
+                <th>index</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>description</th>
+                <th>delete</th>
+                <th>Update</th>
+            </thead>
+            <tbody id="demo">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
